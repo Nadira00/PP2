@@ -9,9 +9,9 @@ namespace lab2task2
 {
     class Program
     {
-        static bool f(int n)
+        static bool f(int n) //the method to check is number prime
         {
-            if (n <= 1) return false;
+            if (n <= 1) return false;  //primes starts from 2
             else
             {
                 bool k = true;
@@ -29,11 +29,11 @@ namespace lab2task2
         }
         static void Main(string[] args)
         {
-            FileStream fs = new FileStream(@"C:\Users\Айгерим Мукышева\source\repos\week2\lab2task2\lab2task2\bin\input.txt", FileMode.Open, FileAccess.Read);
-            StreamReader s = new StreamReader(fs);
+            FileStream fs = new FileStream(@"C:\Users\Айгерим Мукышева\source\repos\week2\lab2task2\lab2task2\bin\input.txt", FileMode.Open, FileAccess.Read); //creating opening file
+            StreamReader s = new StreamReader(fs);  //reading from file
             string l = s.ReadLine();
             string[] a = l.Split();
-            int[] b = new int[a.Length];
+            int[] b = new int[a.Length];  //create an array
             for (int i = 0; i < a.Length; i++)
             {
                 b[i] = int.Parse(a[i]);

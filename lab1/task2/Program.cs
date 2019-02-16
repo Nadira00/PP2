@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace task
 {
-    public class student
+    public class student  //create class student
     {
-        private string name;
+        private string name;  //parametres of class
         private string id;
         private int year;
         public student(string NAME, string ID, int Year)
@@ -17,11 +17,11 @@ namespace task
             id = ID;
             year = Year;
         }
-        public void output()
+        public void output()  //the method of output
         {
-            Console.WriteLine(name + " " + id + " " + " " + year);
+            Console.WriteLine(name + " " + id + " " + year);
         }
-        public int increment()
+        public int increment()  //the method of increment
         {
             return year++;
         }
@@ -31,10 +31,10 @@ namespace task
 
         static void Main(string[] args)
         {
-            string s = Console.ReadLine();
-            string i = Console.ReadLine();
-            int y = int.Parse(Console.ReadLine());
-            student s1 = new student(s, i, y);
+            string s = Console.ReadLine();  //create string s
+            string i = Console.ReadLine();  //create string i
+            int y = int.Parse(Console.ReadLine());  //create integer for year
+            student s1 = new student(s, i, y);   //create new class 
             s1.increment();
             s1.output();
         }

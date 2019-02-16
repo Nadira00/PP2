@@ -8,24 +8,21 @@ namespace Task3
 {
     class Program
     {
-        static void f(string[] s1, string[] s2)// method that makes out of an array of integers another array of integers, where every element is repeated
-        {
-            for (int i = 0; i < s2.Length; i++)
-            {
-                s2[i] = s1[i / 2];
-            }
-            for (int i = 0; i < s2.Length; i++)
-            {
-                Console.Write(s2[i] + " ");
-            }
-        }
+       
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine()); //create number of numbers
             string s = Console.ReadLine();
-            string[] p = s.Split(); //initial array of strings
-            string[] q = new string[2 * n];//new array that saves double values
-            f(p, q);//calling function
+            string[] q = s.Split(); //initial array of strings
+            for(int i = 0; i < n; i++)
+            {
+                for(int j=0;j<2;j++) //i=2j
+                {
+                    Console.Write(arg[i] + " ");
+                }
+                    
+            }
+           
         }
     }
 }
