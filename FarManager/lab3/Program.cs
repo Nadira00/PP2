@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FarManager
+namespace lab3
 {
     enum Mode //creating enum to know is it dir or file when pressing enter
     {
@@ -144,7 +144,7 @@ namespace FarManager
     {
         static void Main(string[] args)
         {
-            DirectoryInfo dirinfo = new DirectoryInfo(@"C:\Users\Erkebulan\Desktop\ACM\ACM ICPC");
+            DirectoryInfo dirinfo = new DirectoryInfo(@"C:\Users\Айгерим Мукышева\source\repos");
             Stack<layer> history = new Stack<layer>(); //creating stack for saving layers
             Mode Case = Mode.DIR; // initially its directory mode
             history.Push(new layer(dirinfo));
